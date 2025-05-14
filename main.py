@@ -2,7 +2,7 @@ import streamlit as st
 from SimplerLLM.tools.youtube import get_youtube_transcript
 
 # App title
-st.title("🎥 Mona's YouTube Transcript Extractor")
+st.title("🎥 YouTube Transcript Extractor [Beta]")
 
 # Instructions
 st.write("Enter the URL of a YouTube video to extract its transcript.")
@@ -27,6 +27,3 @@ if st.button("Get Transcript"):
             st.error(f"An error occurred: {e}")
     else:
         st.warning("Please enter a valid YouTube video URL.")
-
-# Footer
-st.write("\n\nMade with ❤️")
